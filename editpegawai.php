@@ -27,14 +27,14 @@ $result = mysqli_query($conn, $sql);
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tambah Data Pegawai</title>
+	<title>Edit Data Pegawai</title>
 </head>
 <body>
-	<h2>Tambah Data Pegawai</h2>
+	<h2>Edit Data Pegawai</h2>
 
-	<form method="POST" action="simpan.php">
+	<form method="POST" action="simpanedit.php">
         <label>ID:</label>
-		<input type="text" name="id" value="<?php echo $row['id']; ?>"><br>
+		<input type="text" name="id" value="<?php echo $row['id_pegawai']; ?>"><br>
 		<label>Nama:</label>
 		<input type="text" name="nama"value="<?php echo $row['nama']; ?>"><br>
 		<label>Bidang:</label>
@@ -52,5 +52,6 @@ $result = mysqli_query($conn, $sql);
                             </select>
 		<button type="submit">Simpan</button>
 	</form>
+                <a href="pegawai2.php" class="btn btn-secondary">Kembali ke Daftar Pegawai</a>
 </body>
 </html>

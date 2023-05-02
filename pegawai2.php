@@ -56,9 +56,9 @@
                                     echo "<td>" . $row["bidang"] . "</td>";
                                     echo "<td>" . $row["kota"] . "</td>";
                                     echo '<td>
-                                    <a href="#" class="btn btn-primary" >Lihat</a>
-                                    <a href="#" class="btn btn-secondary">Edit</a>  
-                                    <a href="#" class="btn btn-danger">Delete</a>
+                                    <a href="lihatpegawai.php?id='.$row["id_pegawai"].'" class="btn btn-primary">Lihat</a>
+                                    <a href="editpegawai.php?id='.$row["id_pegawai"].'" class="btn btn-secondary">Edit</a>  
+                                    <a href="hapuspegawai.php?id='.$row["id_pegawai"].'" class="btn btn-danger">Hapus</a>
                                     </td>';
                                     echo "</tr>";
                                 }

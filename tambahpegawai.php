@@ -25,7 +25,7 @@ $result = mysqli_query($conn, $sql);
 <body>
 	<h2>Tambah Data Pegawai</h2>
 
-	<form method="POST" action="simpan.php">
+	<form method="POST" action="simpantambah.php">
         <label>ID:</label>
 		<input type="text" name="id"><br>
 		<label>Nama:</label>
@@ -45,5 +45,6 @@ $result = mysqli_query($conn, $sql);
                             </select>
 		<button type="submit">Simpan</button>
 	</form>
+    <a href="pegawai2.php" class="btn btn-secondary">Kembali ke Daftar Pegawai</a>
 </body>
 </html>
